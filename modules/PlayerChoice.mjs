@@ -1,9 +1,4 @@
-const getComputerChoice = () => {
-  const choices = ["rock", "paper", "scissors"];
-  return choices[Math.floor(Math.random() * 3)];
-};
-
-const getPlayerChoice = () => {
+export const getPlayerChoice = () => {
     const regex = /rock|paper|Scissors/i
     const choice = prompt("chose your weapon: ")
     if (regex.test(choice)){
@@ -13,4 +8,3 @@ const getPlayerChoice = () => {
         getPlayerChoice()
     }
 }
-
