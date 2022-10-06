@@ -11,6 +11,8 @@ export const game = (round) => {
     }
     if (wons.length >= 3) {
         console.log("You won the game " + wons.length + " points")
+    } else if (wons.length === 0){
+        console.log(`"You lose the game, you score was ${wons.length}!`)
     } else {
         console.log(`"You lose the game, just make ${wons.length} points!`)
     }
