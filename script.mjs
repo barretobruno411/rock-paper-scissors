@@ -30,10 +30,14 @@ buttons.forEach((button) => {
         if (score >= 3) {
             display.textContent = `GAME OVER
             You win, your score was ${score}`
+            score = 0;
+            plays = 0;
             
         } else {
             display.textContent = `GAME OVER
             You lose, your score was ${score}`
+            score = 0;
+            plays = 0;
         }
     }
 });
