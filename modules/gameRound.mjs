@@ -1,6 +1,6 @@
 export const gameRound = (computer, player) => {
   const computerChoice = computer();
-  const playerChoice = player();
+  const playerChoice = player;
   if (computerChoice === playerChoice) {
     return `Draw! ${playerChoice} and ${computerChoice} are the same`;
   } else if (playerChoice === "rock" && computerChoice === "scissors") {

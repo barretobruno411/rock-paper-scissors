@@ -1,3 +1,4 @@
+
 import {getComputerChoice} from "./ComputerChoice.mjs"
 import {getPlayerChoice} from "./PlayerChoice.mjs"
 import {gameRound} from "./gameRound.mjs"
@@ -5,7 +6,7 @@ export const game = (round) => {
     const regex = /win/i
     const wons = []
     for (let i = 1; i <= 5; i++) {
-        let roundResult = gameRound(getComputerChoice,getPlayerChoice)
+        let roundResult = gameRound(getComputerChoice,getPlayerChoice())
         if (regex.test(roundResult)) wons.push("won")
         console.log(roundResult)
     }
